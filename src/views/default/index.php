@@ -128,6 +128,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Dashboard'];
         ?>
     </div>
 
+<?= \dmstr\modules\prototype\widgets\TwigWidget::widget(['renderEmpty' => false]) ?>
 
 <?php if (\Yii::$app->user->identity->isAdmin): ?>
     <div class="row">
